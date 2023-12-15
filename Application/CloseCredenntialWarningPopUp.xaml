@@ -1,0 +1,131 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CloseCredenntialWarningPopUp" this:CloseCredenntialWarningPopUp.url="https://www.ups.com/in/en/Home.page?loc=en_IN" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="url" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1130.4,666.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CloseCredenntialWarningPopUp_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CloseCredenntialWarningPopUp" sap:VirtualizedContainerService.HintSize="545.6,601.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: UPS Shipping &amp; Logistics Solutions | Your Ultimate Home for Global Delivery Serv" sap:VirtualizedContainerService.HintSize="483.2,489.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="383af33d-2625-4470-a1b3-4c0dd1afc600" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="383af33d-2625-4470-a1b3-4c0dd1afc600" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="1146, 394, 84, 44" CvTextArea="1176, 407, 23, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1149, 396, 80, 41" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;ctrl name='Change your password' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Change your password' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' automationid='' check:fulltext='OK' /&gt;" Guid="15cc081f-436d-45ba-a363-90adfdf26363" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAtCAYAAAAwRkzIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOiSURBVGhD7ZvLaxNBHMfzd/Sm4kHqTelFvImgBy/2VBDxIgpCUZGq2B5qpIoWiuKDoIIUqUXFoLW1isWCsVjaUqoita3GWiGP5p1mk90kX+exj2ySpoUumy3ODz6Qmdlpwyczv52d3XVBhKVRITSTK2JsQca9Dyu48SYlKKN7OA3vlIRfy3nVmDl0oUoB6HmXxta2ABrOCtbDwZ5lzAYU1SAPXegB0litk2BtBmeyqkVVaNdgSm889TiO6UUFkszaRVSJpWgBzycl7OwIMmeN7UGEU2SKk3Ap+SK2qNP8/LMEq+wfz+DYwxgO34kKymi+G0X7iySWYnn4lxVsu8Dd3R5JM3euyd+yPjppPnj4cUUvC1ZnV2eYCTz+KMbKRx/EWNnlGTUESiS/HrnPDxCszfSiDPcrni7ptGdC6VJAO4AGHdZaWVCbT/M5tpTSyjSE0A0ghFqMEGoxQqjFCKEWI4RajBBqMUKoxThWaFNvGiPBAiT2DWgUEQ9m4ekNmY7rZxcjCvr1uhA65vmmhBTMoKXkWDtwpNAmbw78og2IRxTMBQkRLgnIw+c1pJYLpX3jtCqTQ4fb/HftwIFCk/Bl6H8twDdg3o/dN1AiS60zCfVkMEe3GGVS9hj97MR5Qkf5pqvkT1ZpD8GzVCStRUy853WG0Ci8EfqZ/BAlI9huHCe0jeU/Q1gF4/z2wuKXCCtzoSQNqHkz+D1e2cdGHCeUn1DoKKve3qDmyPg8H8FcqBZ5eOs01TUcKnQdI3SKT2ttyg+RerYiKMmv9WCT5lBjBBs5NIRbftrGR29TRV97cJ5QdxoTzGmNs3wii1a1zhBK+2orhCLmxm38ziU4TyhBX0uS0NehCT76ypdEJqGUvqy6hq3P2d6RQin0SslHFvPmKyUJV8pOOhVCCS1aPpVleGxe3DtW6GZFCLUYIdRihFCLEUItRgi1GCHUYoRQixFCLaaq0O63aVMFff5RKwtqM7aQw/VyofRJXK0ikCigtS+hlwW1+RPN49xT7mtPF39e1EUfstUOGP6WxYRfxo5L9butsFk40cu3dPZ3812yk2qZPWN/6Ca/xbD7cggLYf66yNe/CssRAjN0msdW+C2YzpfGPu7nn3xvlwn9EcjrDRT6FLN7oPp7Ov87NGeefpLA3qth3dcZUtZCf63m9UwWjepbDYL1Q6d6QlL3b0noQmkkScO1oRSaydJp+0UhdzXo6KSvH43O5lRzRpiEithoAP8ALC5ehTT4zycAAAAASUVORK5CYII=" InformativeScreenshot="124b332dd451715c2fd648a40a655dc0.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='UPS Shipping &amp;amp; Logistics Solutions | Your Ultimate Home for Glob*' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="711, 404, 25, 24" CvTextArea="719, 409, 8, 12" CvTextArgument="i." CvType="Icon" DesignTimeRectangle="709, 396, 30, 41" ElementType="Text" FriendlyName="'Chrome periodically'" FullSelectorArgument="&lt;ctrl name='Change your password' role='dialog' /&gt;&lt;ctrl name='Chrome periodically checks your passwords against lists that hav*' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Change your password' role='dialog' /&gt;&lt;ctrl name='Chrome periodically checks your passwords against lists that hav*' role='text' automationid='' check:fulltext='Chrome periodically checks your passwords against lists that have been published online. When doing' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAtCAYAAADLEbkXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKMSURBVFhH7Zb9T1JRGMf7TytfKFAgwLBwTUsXpZNMR5bO1noZGUoMtbVezDlztorZqvVu60VSQQRBAxSeeI4P4T1077lkP/TD+Wx37H6fw7kf7nljH/wnSBEeKcIjRXikCI8U4ZEiPHsSSaXSsLDwGZaWlmF7O0/p31G1SDy+BsP+ADicLbC/9vDvq+5QI5zr9cLTZ2EoFArUWj+6RbDzYGgcagwm9mCz7Sh0dveAb3gELg5ehpbWdjhYv1Nra3fDSjRK39SHLhGU8PYPsodY7c0Qnn9BFSXJ5Dr0eS+xdkazHRYjP6giRpdIIBhinbs7PbCxsUGpOpNT06y93emCTCZDqTZCkdV4HGqL44+dbm7+pHSHRCIJp892w9jEXUrKlORxOPUgFAkEx1iHM7NzlJSJRmOsNjB0hZIy2WwWTBYHWGxOSrQRiuDEM5iskNvaokQ/V6/7mOiXr98oUUcogr+qreMM3SnJ5XLw5u07iKhMysfFt4gi+ClCKFJjaIAOdxfdKdEaGuTlq9esPn6ncg7xCEUsdic0u1rpTolIZHbuCatPTc9Qoo5QBJcsblTpdOWyFYlcu3GT1d9/+EiJOkIRXJrY2b0Hk5SU0RLB/aPB6gBjow3yefE5JBRZSyTYPoLLkH8rWiL+0dus5h8NUqKNUAQJhiZYpzhp/zREPPcfPmLtbU3HKzZBNXSJ7D5rcPI+D89TRQmezJ7zXtYOz5rvixGqiNElgqAM7rKlExZP3y5PL/hujUD/wBC4TpyCA3VGVjtZ3Hdw2KpBt0iJWGyVHf1Hmo6xh5aueqMZevouqL4tEVWL7GY9lYJP+A9teUXXytBiTyL/EinCI0V4pAiPFOGRIjxSRAnAL0A/HaPdhUNhAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="3c7fb880adef48d5c310b3fd6c40858e.jpg" Selector="&lt;html app='chrome.exe' title='UPS Shipping &amp;amp; Logistics Solutions | Your Ultimate Home for Global Delivery Services | UPS - United States' /&gt;" Title="UPS Shipping &amp; Logistics Solutions | Your Ultimate Home for Global Delivery Services | UPS - United States" Url="[url]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
